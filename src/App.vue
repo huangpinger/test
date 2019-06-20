@@ -4,7 +4,7 @@
     <router-view/>
     <!--<el-button>add</el-button>-->
     <!--&lt;!&ndash;router-link 跳转连接&ndash;&gt;-->
-    <router-link to="/test">test</router-link>
+    <router-link to="/test">测试应用程序</router-link>
     <!--<router-link to="/child">child</router-link>-->
     <!--<div id="form-create"></div>-->
 

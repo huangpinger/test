@@ -7,7 +7,7 @@
     <slot></slot>
     <div class="input-main">
       <input :style="{}"
-             :class="confClass.inputClass"
+             :class="confClass.spanClass"
              type="text"
              v-model="msg"
              v-on:input="whenInput"

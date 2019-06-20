@@ -20,12 +20,12 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // cheap-module-eval-source-map is faster for development
   devtool: config.dev.devtool,
 
-  // these devServer options should be customized in /config/index.js
+  // these devServer options should be customized in /config/main.js
   devServer: {
     clientLogLevel: 'warning',
     historyApiFallback: {
       rewrites: [
-        { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, './src/index.js') },
+        { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, './src/main.js') },
       ],
     },
     hot: true,

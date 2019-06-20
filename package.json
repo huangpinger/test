@@ -4,16 +4,17 @@
   "description": "A Vue.js project",
   "author": "huang ping <766137195@qq.com>",
   "private": true,
-  "main": "index.win.js",
+  "main": "main.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start-dev": "npm run dev",
-    "start": "electron .",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "electron_dev": "electron build/electron.js",
+    "electron_build": "electron-packager ./dist/ --platform=win32 --arch=ia32  --icon=./src/assets/yizhu.ico  --overwrite"
   },
   "dependencies": {
     "lodash": "^4.17.11",
@@ -41,7 +42,8 @@
     "copy-webpack-plugin": "^4.0.1",
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.28.11",
-    "electron": "^5.0.4",
+    "electron": "5.0.4",
+    "electron-packager": "^13.1.1",
     "element-ui": "^2.4.11",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^10.2.1",
