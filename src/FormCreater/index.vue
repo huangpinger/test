@@ -1,11 +1,11 @@
 <template>
-    <div class="main-container">
-      <el-aside width="100px">
-        <ul>
-          <li class="fa fa-th-list fa-lg"></li>
-        </ul>
-      </el-aside>
-      <el-main></el-main>
+    <div>
+      <el-container class="main-container">
+        <el-aside width="50px" class="aside-container">
+          <i class="fa fa-th-list fa-lg"></i>
+        </el-aside>
+        <el-main></el-main>
+      </el-container>
     </div>
 </template>
 
@@ -22,6 +22,13 @@
     left: 0;
     right: 0;
     bottom: 0;
+    padding: 10px;
+    .aside-container{
+      background:linear-gradient(to bottom, #8590fb, #4cc2d7);
+      text-align: center;
+      padding: 10px;
+      color: #fff;
+    }
   }
 
 </style>
