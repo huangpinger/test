@@ -1,17 +1,9 @@
 <template>
   <div id="app">
-    我是app
-    <router-view/>
-    <!--<el-button>add</el-button>-->
-    <!--&lt;!&ndash;router-link 跳转连接&ndash;&gt;-->
-    <router-link to="/test">测试应用程序</router-link>
-    <!--<router-link to="/child">child</router-link>-->
-    <!--<div id="form-create"></div>-->
-
-    <!--<select :value="a">-->
-        <!--<option label="样式一" ></option>-->
-        <!--<option label="样式二"></option>-->
-      <!--</select>-->
+    <div>header</div>
+    <div class="app-main">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -23,6 +15,12 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+  .app-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 </style>
