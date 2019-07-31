@@ -1,8 +1,8 @@
 <template>
     <div class="main-container">
-      <el-aside width="50px">
+      <el-aside width="100px">
         <ul>
-          <li class="fa fa-th-list fa-lg">123</li>
+          <li class="fa fa-th-list fa-lg"></li>
         </ul>
       </el-aside>
       <el-main></el-main>

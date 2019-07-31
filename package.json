@@ -17,6 +17,8 @@
     "electron_build": "electron-packager ./dist/ --platform=win32 --arch=ia32  --icon=./src/assets/yizhu.ico  --overwrite"
   },
   "dependencies": {
+    "font-awesome": "4.7.0",
+    "iconfont": "^0.3.1",
     "lodash": "^4.17.11",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
