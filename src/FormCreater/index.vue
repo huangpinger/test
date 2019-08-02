@@ -2,7 +2,11 @@
     <div>
       <el-container class="main-container">
         <el-aside width="50px" class="aside-container">
-          <i class="fa fa-th-list fa-lg"></i>
+          <i v-for="item in list"
+             :key="item.template"
+             v-b-tooltip.hover
+             :title="item.title"
+             :class="item.class" ></i>
         </el-aside>
         <el-main></el-main>
       </el-container>
@@ -11,7 +15,16 @@
 
 <script>
   export default {
-    name: 'index'
+    name: 'index',
+    data() {
+      return {
+        list: [
+          {template: 'FormManage', title:'表单管理', class:['fa', 'fa-th-list', 'fa-lg'],  path:'/main/FormManage'},
+          {template: 'formBuilder', title:'构建新的表单', class:['fa', 'fa-th', 'fa-lg'], path:'/main/formBuilder'},
+          {template: 'formPreview', title:'表单预览', class:['fa', 'fa-eye', 'fa-lg'], path:'/main/formPreview'},
+        ],
+      }
+    }
   }
 </script>
 
