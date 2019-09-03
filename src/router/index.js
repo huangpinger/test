@@ -20,22 +20,14 @@ export default new Router({
   routes: [
     { path: '/', redirect: '/main/FormManage'},
     {
-      path: '/main',
-      component: FormMain,
-      children: [
-        {
-          path: 'FormManage',
-          component: FormManage
-        },
-        {
-          path: 'formBuilder',
-          component: FormBuilder
-        },
-        {
-          path: 'formPreview',
-          component: FormPreview
-        }
-      ]
+      path: '/main/FormManage',
+      component: FormManage,
+    },{
+      path: '/main/formBuilder',
+      component: FormBuilder,
+    },{
+      path: '/main/formPreview',
+      component: FormPreview,
     }
 
 
