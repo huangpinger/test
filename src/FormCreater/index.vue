@@ -8,7 +8,13 @@
              :title="item.title"
              :class="item.class" ></i>
         </el-aside>
-        <el-main></el-main>
+        <el-main>
+          <div v-if="template == 'formBuilder'"
+               class="panel"
+               >
+
+          </div>
+        </el-main>
       </el-container>
     </div>
 </template>
