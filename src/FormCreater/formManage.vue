@@ -3,7 +3,7 @@
     <el-cascader
       v-model="value"
       :options="options"
-      :props="{ expandTrigger: 'hover', multiple: true }"
+      :props="{ expandTrigger: 'hover', multiple: true, checkStrictly: true }"
       @change="handleChange"></el-cascader>
   </div>
 </template>
