@@ -3,7 +3,7 @@
     <el-cascader
       v-model="value"
       :options="options"
-      :props="{ expandTrigger: 'hover', multiple: true, checkStrictly: true }"
+      :props="props"
       @change="handleChange"></el-cascader>
   </div>
 </template>
@@ -13,7 +13,26 @@
     name: 'formManage',
     data () {
       return {
-        options: [{
+        value: [],
+        props: { expandTrigger: 'hover', multiple: true, checkStrictly: true },
+        options: [
+          {
+            value: 'zhinan',
+            label: '指南',
+          },{
+            value: 'zhinan',
+            label: '指南',
+          },{
+            value: 'zhinan',
+            label: '指南',
+          },{
+            value: 'zhinan',
+            label: '指南',
+          },{
+            value: 'zhinan',
+            label: '指南',
+          },
+          {
           value: 'zhinan',
           label: '指南',
           children: [{
@@ -208,6 +227,11 @@
             label: '组件交互文档'
           }]
         }]
+      }
+    },
+    methods: {
+      handleChange() {
+
       }
     }
   }

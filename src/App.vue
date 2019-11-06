@@ -8,7 +8,7 @@
              :key="item.template"
              :title="item.title"
              @click="handleChangeList(item)"
-             :class="item.class" ></i>
+             :class="item.class"></i>
         </el-aside>
         <el-main>
           <router-view/>
@@ -42,11 +42,6 @@ export default {
 
 <style lang="scss">
   #app{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     .header{
       background: linear-gradient(to right, #8590fb, #4cc2d7 );
       height: 40px;
