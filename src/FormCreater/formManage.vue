@@ -5,6 +5,7 @@
       :options="options"
       :props="props"
       @change="handleChange"></el-cascader>
+    <input type="input" name="" v-focus />
   </div>
 </template>
 

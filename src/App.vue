@@ -15,6 +15,18 @@
         </el-main>
       </el-container>
     </div>
+    <template>
+      <div class="flex-wrap">
+        <div class="head"></div>
+        <div class="bottom">
+          <div class="bottom-left"></div>
+          <div class="bottom-right">
+            <div class="bottom-right-top"></div>
+            <div class="bottom-right-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -42,6 +54,34 @@ export default {
 
 <style lang="scss">
   #app{
+    .flex-wrap {
+      width: 300px;
+      display: flex;
+      height: 150px;
+      flex-direction: column;
+      .head{
+        height: 60px;
+      }
+      .bottom{
+        flex: 1;
+        display: flex;
+        .bottom-left{
+          flex: 1;
+          padding: 10px;
+        }
+        .bottom-right{
+          width: 60px;
+          display: flex;
+          flex-direction: column;
+          .bottom-right-top{
+            height: 40px;
+          }
+          .bottom-right-bottom{
+            flex: 1;
+          }
+        }
+      }
+    }
     .header{
       background: linear-gradient(to right, #8590fb, #4cc2d7 );
       height: 40px;

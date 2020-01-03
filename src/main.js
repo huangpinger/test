@@ -8,8 +8,10 @@ import store from "./vuex"
 import 'font-awesome/scss/font-awesome.scss'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import focus from '../common/directive'
 
 Vue.use(ElementUI)
+Vue.use(focus)
 //控制台中的头部提示是否关闭
 Vue.config.productionTip = false
 
